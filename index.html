@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' id='main-css' href='assets/css/styles.css' type='text/css' media='all' />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-primary py-0">
+            <div class="container">
+                <div></div>
+                <!-- <div class="row"> -->
+                <div class="nav ml-auto d-flex align-items-center">
+
+                    <div class="contact d-flex">
+                        <div class="py-3 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                        </div>
+                        <div class="contact-item text-white">
+                            <span>Kontak:</span>
+                            <span>08774324234</span>
+                        </div>
+                    </div>
+                    <div class="contact d-flex">
+                        <div class="py-3 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-clock-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                            </svg>
+                        </div>
+                        <div class="contact-item text-white">
+                            <span>Jam Operasional:</span>
+                            <span>Senin - Jumat : 08.00 WIB - 21.00 WIB, Sabtu - Minggu: 08.00 - 19.00 WIB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-2" id="navbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img loading="lazy" height="60" src="/assets/img/logo.jpg"
+                        srcset="assets/img/logo.jpg 1x, assets/img/logo.jpg 2x" alt="Klinik Restu Medika">
+                    <!-- <span class="font-weight-bold text-white ml-3">BPR Syariah AL MABRUR</span> -->
+                </a>
+                <button class="navbar-toggler border p-1 border-dark rounded-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-justify-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                        </svg> -->
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto text-lg-right mb-2 mb-lg-0 px-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"> Produk
+                                </a>
+                                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button> -->
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Produk 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Produk 1.1</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Produk 1.2</a></li>
+                                            <li><a class="dropdown-item" href="#">Produk 1.3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontak</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+
+                        <div class="collapseSearch collapse" id="collapseSearch" style="position: absolute; z-index: 20;">
+                         
+                            
+                                <form action="#" class="form-inline p-3">
+                                  <div class="input-group">
+                                    <input class="form-control w-auto" type="text" name="search" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary text-white rounded-0" type="submit">Cari</button>
+                                    </div>
+                                  </div>
+                                </form>
+                            
+                        </div>
+                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                        <button class="btn btn-outline-success btn-success text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                          </svg></button>
+                        </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleDark" class="carousel carousel slide overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets/img/258774165_224683709774763_8701490020588332687_n.jpg" class="d-block w-100"
+                        alt="..." style="height: 500px; object-fit: cover;">
+                    <!-- <div class="position-absolute text-white bottom-0 d-none d-md-block bg-slider-green w-100 p-3">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/5fe1e82595561756794819.jpeg" class="d-block w-100" alt="..."
+                        style="height: 500px; object-fit: cover;">
+                    <!-- <div class="position-absolute text-white bottom-0 d-none w-100  d-md-block bg-slider-green p-3">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/photo-front-view-gedung-medik-rumah-sakit-pgi-cikini-desain-arsitek-oleh-pt-global-rancang-selaras.png"
+                        class="d-block w-100" alt="..." style="height: 500px; object-fit: cover;">
+                    <!-- <div class="position-absolute text-white bottom-0 d-none w-100 d-md-block bg-slider-slider p-3">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div> -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="service">
+            <div class="container d-flex justify-content-center mb-4">
+                <div class="row service-box shadow-sm border-1 rounded-3 bg-white">
+                    <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="d-flex fs-5">
+                            <div class="px-4">
+                                <i class="fa fa-ambulance fa-flip-horizontal"></i>
+                            </div>
+                            <div class="text-lg-start fw-bolder">
+                                Ambulance
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="d-flex fs-5">
+                            <div class="px-4">
+                                <i class="fa fa-medkit" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-lg-start fw-bolder">
+                                Perawatan
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+                        <div class="d-flex fs-5">
+                            <div class="px-4">
+                                <i class="fa fa-stethoscope" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-lg-start fw-bolder">
+                                Konsulasi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="schedule">
+            <div class="container mb-4 py-4 rounded-2 shadow-sm border">
+                <div
+                    class="p-1 border border-3 rounded-3 border-primary bg-primary text-white d-flex align-items-center fs-3">
+                    <h2 class="fs-3 my-1">
+                        Jadwal Dokter Praktek :
+                    </h2>
+                </div>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>
+                                Hari ini: Jumat, 28 Oktober 2020
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>dr. Sri Hastuti</td>
+                            <td>08.00 - 09.00 WIB</td>
+                        </tr>
+                        <tr>
+                            <td>dr. Andar Setiawan</td>
+                            <td>12.00 - 16.00 WIB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 p-5">
+                        <img src="assets/img/5564c4700423bdc6038b4567.jpeg" class="img rounded-3 mx-auto d-block"
+                            alt="Responsive Web Design">
+                    </div>
+                    <div class="col-md-6 col-sm-12 p-5">
+                        <div class="text-primary">
+                            <h1>Tentang Kami</h1>
+                        </div>
+                        <p class="my-2 my-lg-5 text-dark lh-28">
+                            Kami adalah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at erat
+                            lacus. Sed volutpat
+                            aliquet lorem. Quisque at nisi eget magna imperdiet lobortis nec vitae massa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news" class="">
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="heading-space-between">
+                        <div class="section-title  py-3">
+                            <div class="title fw-bolder text-primary">
+                                <h1>Berita</h1>
+                            </div>
+                        </div>
+                        <a class="d-flex btn-small text-white my-4" href="#">
+                            <span class="display-flex-center">Lihat Semua
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" right="20" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="row justify-content-md-center">
+
+                        <div class="col-lg-3 col-md-10 col-sm-12">
+                            <div class="card border border-1  mt-3 pb-1 pt-0">
+                                <img class="img card-img-top " style="height: 200px;"
+                                    src="assets/img/5564c4700423bdc6038b4567.jpeg" alt="gambar" srcset="">
+
+                                <div class="card-body">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="my-4 fw-bolder text-decoration-none">Di Tengah Covid-19, Pemasaran
+                                            Online dan Digital
+                                            Branding Jadi Pilihan</h5>
+                                    </a>
+                                    <span class="badge rounded-pill bg-light fw-light text-muted">Bisnis</span>
+                                    <span class="badge rounded-pill bg-light fw-light text-muted"> 24 Maret 2021 -
+                                        15:41</span>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-10 col-sm-12">
+                            <div class="card border border-1  mt-3 pb-1 pt-0">
+                                <img class="img card-img-top " style="height: 200px;"
+                                    src="assets/img/pexels-photo-39811.jpeg" alt="gambar" srcset="">
+
+                                <div class="card-body">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="my-4 fw-bolder text-decoration-none">Di Tengah Covid-19, Pemasaran
+                                            Online dan Digital
+                                            Branding Jadi Pilihan</h5>
+                                    </a>
+                                    <span class="badge rounded-pill bg-light fw-light text-muted">Bisnis</span>
+                                    <span class="badge rounded-pill bg-light fw-light text-muted"> 24 Maret 2021 -
+                                        15:41</span>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-3 col-md-10 col-sm-12">
+                            <div class="card border border-1  mt-3 pb-1 pt-0">
+                                <img class="img card-img-top " style="height: 200px;"
+                                    src="assets/img/What-to-Do-Before-You-Work-With-a-Web-Designer.jpg" alt="gambar" srcset="">
+
+                                <div class="card-body">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="my-4 fw-bolder text-decoration-none">Di Tengah Covid-19, Pemasaran
+                                            Online dan Digital
+                                            Branding Jadi Pilihan</h5>
+                                    </a>
+                                    <span class="badge rounded-pill bg-light fw-light text-muted">Bisnis</span>
+                                    <span class="badge rounded-pill bg-light fw-light text-muted"> 24 Maret 2021 -
+                                        15:41</span>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-10 col-sm-12">
+                            <div class="card border border-1  mt-3 pb-1 pt-0">
+                                <img class="img card-img-top " style="height: 200px;"
+                                    src="assets/img/telang.jpg" alt="gambar" srcset="">
+
+                                <div class="card-body">
+                                    <a class="text-decoration-none" href="#">
+                                        <h5 class="my-4 fw-bolder text-decoration-none">Mengenal Manfaat Bunga Telang, Termasuk untuk Diet</h5>
+                                    </a>
+                                    <span class="badge rounded-pill bg-light fw-light text-muted">Bisnis</span>
+                                    <span class="badge rounded-pill bg-light fw-light text-muted"> 24 Maret 2021 -
+                                        15:41</span>
+
+                                    <!-- <p class="my-4 fw-light fs-7">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                    </p> -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="infografis">
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="heading-space-between">
+                        <div class="section-title  py-3">
+                            <div class="title fw-bolder text-primary">
+                                <h1>Infografis</h1>
+                            </div>
+                        </div>
+                        <a class="d-flex btn-small text-white my-4" href="#">
+                            <span class="display-flex-center">Lihat Semua
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" right="20" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="col-lg-3 col-md-10 col-sm-12 p-1">
+                        <img class="img img-responsive " style="max-height: 500px;" src="assets/img/diabetes_1.jpg"
+                            alt="gambar" srcset="">
+
+                    </div>
+                    <div class="col-lg-3 col-md-10 col-sm-12 p-1">
+                        <img class="img img-responsive " style="max-height: 500px;" src="assets/img/kolesterol_1.jpg"
+                            alt="gambar" srcset="">
+                    </div>
+
+                    <div class="col-lg-3 col-md-10 col-sm-12 p-1">
+                        <img class="img img-responsive " style="max-height: 500px;" src="assets/img/pengaduan.jpg"
+                            alt="gambar" srcset="">
+                    </div>
+
+                    <div class="col-lg-3 col-md-10 col-sm-12 p-1">
+                        <img class="img img-responsive " style="max-height: 500px;" src="assets/img/online.jpg"
+                            alt="gambar" srcset="">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+
+            <div class="container mb-4">
+                <div class="heading-space-between">
+                    <div class="section-title  py-3">
+                        <div class="title fw-bolder text-primary">
+                            <h1>Kontak</h1>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="d-flex flex-md-row flex-column justify-content-between">
+                    <div class="container mb-1 p-4">
+                        <div class="contact d-flex">
+                            <div class="py-3">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-item ">
+                                <span>Jl. Gor Karanganom No.Trono, Dusun 1, Tempursari, Ngawen, Klaten Regency, Central
+                                    Java 57466</span>
+                                <!-- <span>08774324234</span> -->
+                            </div>
+                        </div>
+
+                        <div class="contact d-flex">
+                            <div class="py-3">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-item">
+                                <span>(0272) 3354145
+                                </span>
+                                <!-- <span>08774324234</span> -->
+                            </div>
+                        </div>
+
+                        <div class="contact d-flex">
+                            <div class="py-3">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-item">
+                                <span>+6281912735813</span>
+                                <!-- <span>08774324234</span> -->
+                            </div>
+                        </div>
+
+                        <div class="contact d-flex">
+                            <div class="py-3">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-item">
+                                <span>info@restumedika.com</span>
+                                <!-- <span>08774324234</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15816.486029831296!2d110.6197115!3d-7.6700841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63366799b208096e!2sKlinik%20Restu%20Medika!5e0!3m2!1sid!2sid!4v1638671292801!5m2!1sid!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer  class="bg-dark text-white ">
+        <div class="container">
+            <div class="d-flex flex-md-row flex-column justify-content-between ">
+                <div class="d-flex logo p-4">
+                    <img class="img-responsive img img-fluid" src="assets/img/logo.jpg" alt="logo klinik restu medika" style="object-fit: cover; max-height: 160px;">
+                    <!-- <div><h2>Klinik Restu Medika</h2></div> -->
+                </div>
+                <div class="sosial-media p-4 d-flex flex-md-row flex-column ">
+                    <div class="find-us py-2">
+                        <h5>Temukan Kami:</h5>
+                    </div>
+                    <div class="d-flex py-2">
+                        <div class="social-icon"><a href="https://api.whatsapp.com/send?phone=+6282147439346" class="text-light p-2"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"></path></svg></a></div>
+                        <div class="social-icon"><a href="https://instagram.com/idwebhostcom" class="text-light p-2"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path></svg></a></div>
+                        <div class="social-icon"><a href="https://twitter.com/idwebhost" class="text-light p-2"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></a></div>
+                        <div class="social-icon"><a href="https://www.facebook.com/idwebhost/" class="text-light p-2"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"></path></svg></a></div>
+                      </div>
+                </div>
+            </div>
+
+            </div>
+            <div class="border"></div>
+            <div class="container">
+                
+            <div class="d-flex justify-content-between fs-7">
+                <div>
+                    <p>Copyright © 2021 - Klinik Restu Medika | Sinergisolusiweb</p>
+                </div>
+                                    
+                    
+                <div id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                style="cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                    <path
+                        d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z" />
+                </svg> Statistik Pengunjung | Hari ini 1 Pengunjung
+            </div>
+            <div class="text-white dropdown-menu dropdown-menu-right shadow bg-dark rounded-2"
+                aria-labelledby="dropdownMenuButton1">
+                <div class="dropdown-header text-primary px-3 mt-1">Statistik Pengunjung</div>
+                <ul class="list-group-flush px-3 mb-0 fs-1">
+                    <li
+                        class="list-group-item text-white  bg-transparent border-dark px-0 d-flex justify-content-between">
+                        <span class="ws-nowrap">Online</span>
+                        <span class="ml-4">1</span>
+                    </li>
+                    <li
+                        class="list-group-item text-white  bg-transparent border-dark px-0 d-flex justify-content-between">
+                        <span class="ws-nowrap">Hari ini</span>
+                        <span class="ml-4">1</span>
+                    </li>
+                    <li
+                        class="list-group-item text-white  bg-transparent border-dark px-0 d-flex justify-content-between">
+                        <span class="ws-nowrap">Minggu ini</span>
+                        <span class="ml-4">2</span>
+                    </li>
+                    <li
+                        class="list-group-item text-white  bg-transparent border-dark px-0 d-flex justify-content-between">
+                        <span class="ws-nowrap">Bulan ini</span>
+                        <span class="ml-4">9</span>
+                    </li>
+                    <li
+                        class="list-group-item text-white  bg-transparent border-dark px-0 d-flex justify-content-between">
+                        <span class="ws-nowrap">Tahun ini</span>
+                        <span class="ml-4">331</span>
+                    </li>
+                    <li
+                        class="list-group-item text-white  bg-transparent border-dark px-0 d-flex justify-content-between">
+                        <span class="ws-nowrap">Total</span>
+                        <span class="ml-4">331</span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
