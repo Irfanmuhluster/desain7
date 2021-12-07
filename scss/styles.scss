@@ -602,3 +602,18 @@ ul {
     }
 }
 
+// .map-responsive{
+//     overflow:hidden;
+//     padding-bottom:56.25%;
+//     position:relative;
+//     height:0;
+// }
+
+.map-responsive iframe{
+    @include media-breakpoint-down (md) {
+        height:100%;
+        width:100%;
+    }
+}
+
+
